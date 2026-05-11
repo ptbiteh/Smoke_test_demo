@@ -1,0 +1,16 @@
+name: 🌫️ Smoke Test Demo
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧪 Check API is alive
+        run: |
+          echo "Testing JSONPlaceholder API..."
+          curl -f https://jsonplaceholder.typicode.com/posts/1
+          echo "✅ Smoke test passed!"
