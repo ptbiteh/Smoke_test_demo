@@ -12,5 +12,4 @@ jobs:
       - name: 🧪 Check API is alive
         run: |
           echo "Testing JSONPlaceholder API..."
-          curl -f https://jsonplaceholder.typicode.com/posts/1
-          echo "✅ Smoke test passed!"
+          curl -f https://this-site-does-not-exist-12345.com
